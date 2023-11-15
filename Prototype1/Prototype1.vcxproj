@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AgrarSect.h" />
     <ClInclude Include="Economy.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Prototype1.h" />
@@ -135,6 +136,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AgrarSect.cpp" />
     <ClCompile Include="Economy.cpp" />
     <ClCompile Include="Prototype1.cpp" />
     <ClCompile Include="Race.cpp" />
