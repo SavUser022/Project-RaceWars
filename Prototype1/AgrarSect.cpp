@@ -4,8 +4,8 @@
 AgrarSect::AgrarSect() : Economy(), fields(10)
 {}
 
-AgrarSect::AgrarSect(std::string sector, double workers, double money, double fields)
-	:  fields(fields), Economy(sector, workers, money)
+AgrarSect::AgrarSect(std::string sector, double workers, double money, double fields, double factories)
+	:  fields(fields), Economy(sector, workers, money, factories)
 {
 }
 
@@ -20,30 +20,34 @@ AgrarSect::AgrarSect(const AgrarSect& item)
 
 AgrarSect::~AgrarSect()
 {
+
 }
 
 double AgrarSect::fundSector()
 {
-	factories = money * 0.01;
-	fields = money * 0.1;
-
+	int spends;
+	money - spends;
+	factories = spends * 0.01;
+	fields = spends * 0.1;
 	return factories;
 }
 
 double AgrarSect::shortenSector()
 {
+	money - 0.1;
 	factories - 10;
 	return factories;
 }
 
 double AgrarSect::income()
 {
-	
+	money = (fields * 0.9) + (factories * 0.5) ;
+	return money;
 }
 
 double AgrarSect::costSector()
 {
-
-	return 0.0;
+	money - ((factories * 0.1) + (fields * 0.1));
+	return money;
 }
 

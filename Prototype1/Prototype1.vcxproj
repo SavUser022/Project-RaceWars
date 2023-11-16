@@ -129,7 +129,11 @@
   <ItemGroup>
     <ClInclude Include="AgrarSect.h" />
     <ClInclude Include="Economy.h" />
+    <ClInclude Include="Engineering.h" />
+    <ClInclude Include="FoodIndustry.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Nuclear.h" />
+    <ClInclude Include="PetroChemical.h" />
     <ClInclude Include="Prototype1.h" />
     <ClInclude Include="Race.h" />
     <ClInclude Include="Resource.h" />
@@ -138,6 +142,10 @@
   <ItemGroup>
     <ClCompile Include="AgrarSect.cpp" />
     <ClCompile Include="Economy.cpp" />
+    <ClCompile Include="Engineering.cpp" />
+    <ClCompile Include="FoodIndustry.cpp" />
+    <ClCompile Include="Nuclear.cpp" />
+    <ClCompile Include="PetroChemical.cpp" />
     <ClCompile Include="Prototype1.cpp" />
     <ClCompile Include="Race.cpp" />
   </ItemGroup>

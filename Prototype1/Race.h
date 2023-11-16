@@ -12,7 +12,7 @@ private:
 public:
 	Race();
 	Race(std::string name, double population, 
-		int status, int power, double inclome);
+		int status, int power, double income);
 	Race(const Race& item);
 	~Race();
 	double increasePopulation( double population, double plus);

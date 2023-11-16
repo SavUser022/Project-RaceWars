@@ -7,10 +7,11 @@ protected:
 	double factories;
 	double workers;
 	double parasites;
-	double spends;
+	std::vector<Economy> Economic;
+	//double spends;
 public:
 	Economy();
-	Economy(std:: string sector, double workers, double money);
+	Economy(std:: string sector, double workers, double money, double factories);
 	Economy(const Economy& item);
 	~Economy();
 	void showParasites();

@@ -7,7 +7,7 @@ private:
     double fields;
 public:
     AgrarSect();
-    AgrarSect(std::string sector, double workers, double money, double fields);
+    AgrarSect(std::string sector, double workers, double money, double fields, double factories);
     AgrarSect(const AgrarSect& item);
     ~AgrarSect();
     double fundSector() override;

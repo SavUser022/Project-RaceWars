@@ -36,6 +36,18 @@
     <ClInclude Include="AgrarSect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Engineering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PetroChemical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Nuclear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FoodIndustry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Prototype1.cpp">
@@ -48,6 +60,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AgrarSect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engineering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PetroChemical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nuclear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FoodIndustry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
