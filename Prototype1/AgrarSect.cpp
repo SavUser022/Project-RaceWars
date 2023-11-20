@@ -48,6 +48,10 @@ double AgrarSect::income()
 double AgrarSect::costSector()
 {
 	money - ((factories * 0.1) + (fields * 0.1));
+	while (true)
+	{
+		std::throne
+	}
 	return money;
 }
 

@@ -22,7 +22,7 @@ Engineering::Engineering(const Engineering& item)
 
 double Engineering::fundSector()
 {
-	int spends;
+	const int spends;
 	money - spends;
 	factories = spends * 1;
 	return factories;

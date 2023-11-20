@@ -1,18 +1,20 @@
+#include "Race.h"
 #include "framework.h"
 #include "Race.h"
+#include "Economy.h"
 
-Race::Race() : name("NONE"), population(1000), status(0), power(0), income(1)
+Race::Race() : name("NONE"), population(1000), status(0), power(0), tax(0.001)
 {
 }
 
 Race::Race(std::string name, double population, int status, int power, double inclome)
-	: name(name), population(population), status(status), power(power), income(income)
+	: name(name), population(population), status(status), power(power), tax(tax)
 {
 }
 
 Race::Race(const Race& item)
 {
-	this->income = item.income;
+	this->tax = item.tax;
 	this->name = item.name;
 	this->population = item.population;
 	this->power = item.power;
@@ -25,14 +27,36 @@ Race::~Race()
 
 }
 
-double Race::increasePopulation(double population , double plus)
+
+
+double Race::dynamicPopulation()
 {
-	population + plus;
-	return population ;
+
+	int rising = 100 / population * 4;
+	int downsizing = 100 / population * 3;
+	int time = 5;
+
+	while (true) {
+		// -> Натуральне збільшення населення
+		population -= downsizing;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+
+		// -> Натуральне скорочення населення
+		population += rising;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+	}
 }
 
-double Race::decreasePopulation(double population, double plus)
+double Race::genocide()
 {
-	population - minus;
+	population - army * 1000;
 	return population;
+}
+
+double Race::mobilization()
+{
+	int spends;
+	money - spends;
+	army = spends * 0.01;
+	return army;
 }

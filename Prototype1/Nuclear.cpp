@@ -31,7 +31,7 @@ double Nuclear::StripingReactors()
 
 double Nuclear::fundSector()
 {
-	int spends;
+	int const spends;
 	money - spends;
 	factories = spends * 0.1;
 	return factories;
@@ -47,13 +47,18 @@ double Nuclear::shortenSector()
 
 double Nuclear::income()
 {
-	money = factories * 10;
+	int time = 5;
+	double cash = factories * 10;
+	while (true)
+	{
+		money += cash;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+	}
 	return money;
 }
 
 double Nuclear::costSector()
 {
-	money - factories * 2.5;
+	money - factories * 0.6;
 	return money;
-	
 }

@@ -7,7 +7,7 @@ protected:
 	double factories;
 	double workers;
 	double parasites;
-	std::vector<Economy> Economic;
+	std::vector<Economy> economics;
 	//double spends;
 public:
 	Economy();

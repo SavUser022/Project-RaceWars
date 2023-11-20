@@ -6,7 +6,7 @@ PetroChemical::PetroChemical() : Economy()
 }
 
 PetroChemical::PetroChemical(std::string sector, double workers, double money) 
-	: Economy(sector, workers, money)
+	: Economy(sector, workers, money, money)
 {
 }
 
@@ -39,9 +39,13 @@ double PetroChemical::shortenSector()
 
 double PetroChemical::income()
 {
-
-	money = factories * 2;
-	return money;
+	int time = 5;
+	double cash = factories * 2;
+	while (true) {
+		money += cash;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+		return money;
+	}
 }
 
 double PetroChemical::costSector()

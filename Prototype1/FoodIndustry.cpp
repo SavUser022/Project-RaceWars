@@ -22,7 +22,7 @@ FoodIndustry::~FoodIndustry()
 
 double FoodIndustry::fundSector()
 {
-	int spends;
+	const int spends;
 	money - spends;
 	factories = spends * 0.75;
 	return factories;

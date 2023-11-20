@@ -1,5 +1,6 @@
 #include "framework.h"
 #include "Economy.h"
+#include "Race.h"
 
 Economy::Economy() : sector("NONE"), workers(10), money(0.01), factories(0)
 {
@@ -30,7 +31,7 @@ void Economy::showParasites()
 
 double Economy::destroyParasites()
 {
-	int spend;
+	const int spend;
 	money - spend;
 	parasites = spend * 10;
 	return parasites;
