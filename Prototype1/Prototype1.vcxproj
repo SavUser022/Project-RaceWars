@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AgrarSect.h" />
+    <ClInclude Include="DataManager.h" />
     <ClInclude Include="Economy.h" />
     <ClInclude Include="Engineering.h" />
     <ClInclude Include="FoodIndustry.h" />
@@ -141,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AgrarSect.cpp" />
+    <ClCompile Include="DataManager.cpp" />
     <ClCompile Include="Economy.cpp" />
     <ClCompile Include="Engineering.cpp" />
     <ClCompile Include="FoodIndustry.cpp" />

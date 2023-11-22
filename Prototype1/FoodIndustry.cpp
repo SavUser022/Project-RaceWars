@@ -22,7 +22,7 @@ FoodIndustry::~FoodIndustry()
 
 double FoodIndustry::fundSector()
 {
-	const int spends;
+	//const int spends = 10;
 	money - spends;
 	factories = spends * 0.75;
 	return factories;
@@ -37,12 +37,25 @@ double FoodIndustry::shortenSector()
 
 double FoodIndustry::income()
 {
-	money = factories * 1.4;
+	double cash = 100 / factories * 14;
+	//int time = 5;
+
+	while (true) {
+		money += cash;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+	};
 	return money;
 }
 
 double FoodIndustry::costSector()
 {
-	money - factories * 0.7;
+	double cash = 100 / factories * 7;
+	//int time = 5;
+
+	while (true) {
+		// -> Натуральне скорочення населення
+		money += cash;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+	};
 	return money;
 }

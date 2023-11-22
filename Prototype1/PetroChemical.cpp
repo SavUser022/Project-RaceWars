@@ -23,7 +23,7 @@ PetroChemical::~PetroChemical()
 
 double PetroChemical::fundSector()
 {
-	int spends;
+	int const spends = 10 ;
 	money - spends;
 	factories = spends * 1.5;
 	return factories;
@@ -50,6 +50,12 @@ double PetroChemical::income()
 
 double PetroChemical::costSector()
 {
-	money - factories * 0.9;
-	return money;
+	int time = 5;
+	double cash = factories * 0.2;
+	while (true) {
+		money -= cash;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+		return money;
+	}
+
 }

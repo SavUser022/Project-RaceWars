@@ -22,7 +22,7 @@ Engineering::Engineering(const Engineering& item)
 
 double Engineering::fundSector()
 {
-	const int spends;
+	//const int spends = 10;
 	money - spends;
 	factories = spends * 1;
 	return factories;
@@ -37,13 +37,24 @@ double Engineering::shortenSector()
 
 double Engineering::income()
 {
-	money =  factories * 1.5;
-	return money;
-	return 0.0;
+	double cash = 100 / factories * 3;
+	//int time = 5;
+
+	while (true) {
+		// -> Натуральне скорочення населення
+		money += cash;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+	};
 }
 
 double Engineering::costSector()
 {
-	money - factories * 0.5 ;
-	return money;
+	double cash = 100 / factories * 3;
+	//int time = 5;
+
+	while (true) {
+		// -> Натуральне скорочення населення
+		money += cash;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+	};
 }

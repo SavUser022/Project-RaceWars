@@ -20,18 +20,19 @@ Nuclear::Nuclear(const Nuclear& item)
 
 Nuclear::~Nuclear()
 {}
-
+/*
 double Nuclear::StripingReactors()
 {
 	int killmutants;
-	killmutants = money * 0.001;
+
+	killmutants = ;
 	mutants - killmutants;
 	return mutants;
 }
-
+*/
 double Nuclear::fundSector()
 {
-	int const spends;
+	int const spends = 10;
 	money - spends;
 	factories = spends * 0.1;
 	return factories;
@@ -48,7 +49,7 @@ double Nuclear::shortenSector()
 double Nuclear::income()
 {
 	int time = 5;
-	double cash = factories * 10;
+	double cash = factories  * 2;
 	while (true)
 	{
 		money += cash;
@@ -59,6 +60,12 @@ double Nuclear::income()
 
 double Nuclear::costSector()
 {
-	money - factories * 0.6;
-	return money;
+	double costs = 100 /  factories * 25;
+	int time = 5;
+
+	while (true) {
+		// -> Натуральне скорочення населення
+		money += costs;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
+	};
 }

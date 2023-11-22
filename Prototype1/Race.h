@@ -14,7 +14,7 @@ class Race :
 		double army;
 		double weapons;
 		int count;
-		std::unique_ptr<Race> races;
+		//std::unique_ptr<Race> races;
 	public:
 		Race();
 		Race(std::string name, double population,
@@ -24,5 +24,6 @@ class Race :
 		double dynamicPopulation();
 		double genocide();
 		double mobilization();
+		//int ChangeRaceStatus();
 };
 

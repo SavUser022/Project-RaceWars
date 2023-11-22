@@ -5,9 +5,8 @@ AgrarSect::AgrarSect() : Economy(), fields(10)
 {}
 
 AgrarSect::AgrarSect(std::string sector, double workers, double money, double fields, double factories)
-	:  fields(fields), Economy(sector, workers, money, factories)
-{
-}
+	: Economy(sector, workers, money, factories), fields(fields)
+{}
 
 AgrarSect::AgrarSect(const AgrarSect& item)
 {
@@ -25,7 +24,8 @@ AgrarSect::~AgrarSect()
 
 double AgrarSect::fundSector()
 {
-	int spends;
+	
+	//int const spends = 10;
 	money - spends;
 	factories = spends * 0.01;
 	fields = spends * 0.1;
@@ -47,10 +47,11 @@ double AgrarSect::income()
 
 double AgrarSect::costSector()
 {
-	money - ((factories * 0.1) + (fields * 0.1));
+	double cash = money - ((factories * 0.1) + (fields * 0.1));
 	while (true)
 	{
-		std::throne
+		money -= cash;
+		std::this_thread::sleep_for(std::chrono::minutes(time));
 	}
 	return money;
 }

@@ -1,4 +1,5 @@
 #pragma once
+#include "Race.h"
 #include "Economy.h"
 class Nuclear :
     public Economy
@@ -11,7 +12,7 @@ public:
     Nuclear(std::string sector, double workers, double money, double mutants);
     Nuclear(const Nuclear& item);
     ~Nuclear();
-    double StripingReactors();
+    //double StripingReactors();
     double fundSector() override;
     double  shortenSector() override;
     double  income() override;
