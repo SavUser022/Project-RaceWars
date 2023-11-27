@@ -58,3 +58,28 @@ double Engineering::costSector()
 		std::this_thread::sleep_for(std::chrono::minutes(time));
 	};
 }
+
+std::string Engineering::getSector()
+{
+	return sector;
+}
+
+int Engineering::getId()
+{
+	return id;
+}
+
+double Engineering::getWorkers()
+{
+	return workers;
+}
+
+double Engineering::getMoney()
+{
+	return money;
+}
+
+double Engineering::getFactories()
+{
+	return factories;
+}

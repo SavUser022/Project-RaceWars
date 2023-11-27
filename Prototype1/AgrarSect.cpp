@@ -56,3 +56,33 @@ double AgrarSect::costSector()
 	return money;
 }
 
+int AgrarSect::getId()
+{
+	return id;
+}
+
+std::string AgrarSect::getSector()
+{
+	return sector;
+}
+
+double AgrarSect::getMoney()
+{
+	return money;
+}
+
+double AgrarSect::getFactories()
+{
+	return factories;
+}
+
+double AgrarSect::getWorkers()
+{
+	return workers;
+}
+
+double AgrarSect::getfields()
+{
+	return fields;
+}
+

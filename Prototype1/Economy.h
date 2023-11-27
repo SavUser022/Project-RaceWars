@@ -1,9 +1,9 @@
 #pragma once
 #include "DataManager.h"
 class Economy
-	: public DataManager
 {
 protected:
+	//int id;
 	const double spends = 10;
 	const int time = 5;
 	double money;
@@ -12,7 +12,6 @@ protected:
 	double workers;
 	double parasites;
 	std::vector<Economy> economics;
-	//double spends;
 public:
 	Economy();
 	Economy(std:: string sector, double workers, double money, double factories);
@@ -25,5 +24,10 @@ public:
 	double virtual income() = 0;
 	double virtual costSector() = 0;
 	double GDP(std::vector<Economy> economics);
+	//virtual int getId() = 0;
+	virtual std::string getSector() = 0;
+	virtual double getMoney() = 0;
+	virtual double getFactories() = 0;
+	virtual double getWorkers() = 0;
 };
 

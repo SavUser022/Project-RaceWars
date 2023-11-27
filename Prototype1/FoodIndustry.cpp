@@ -59,3 +59,25 @@ double FoodIndustry::costSector()
 	};
 	return money;
 }
+
+std::string FoodIndustry::getSector()
+{
+	return sector;
+}
+
+
+
+double FoodIndustry::getWorkers()
+{
+	return workers;
+}
+
+double FoodIndustry::getMoney()
+{
+	return money;
+}
+
+double FoodIndustry::getFactories()
+{
+	return factories;
+}

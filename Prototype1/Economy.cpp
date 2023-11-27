@@ -2,18 +2,18 @@
 #include "Economy.h"
 #include "Race.h"
 
-Economy::Economy() : sector("NONE"), workers(10), money(0.01), factories(0), DataManager()
+Economy::Economy() : sector("NONE"), workers(10), money(0.01), factories(0)
 {
-	
 }
 
 Economy::Economy(std::string sector, double workers, double money, double factories) 
-	: sector(sector), workers(workers), money(money), factories(factories), DataManager()
+	: sector(sector), workers(workers), money(money), factories(factories)
 {
 }
 
 Economy::Economy(const Economy& item)
 {
+	//this->id = item.id;
 	this->money = item.money;
 	this->workers = item.workers;
 	this->sector = item.sector;

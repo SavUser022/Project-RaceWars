@@ -4,6 +4,7 @@ class Race :
     public Economy
 {
 	private:
+		int id;
 		std::string name;
 		double population;
 		int status;
@@ -18,7 +19,7 @@ class Race :
 	public:
 		Race();
 		Race(std::string name, double population,
-			int status, int power, double tax);
+			int status, int power, double tax, int id);
 		Race(const Race & item);
 		~Race();
 		double dynamicPopulation();

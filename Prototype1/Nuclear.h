@@ -4,12 +4,12 @@
 class Nuclear :
     public Economy
 {
-private:
-    double mutants;
+//private:
+    //double mutants;
     //double killMutants;
 public:
     Nuclear();
-    Nuclear(std::string sector, double workers, double money, double mutants);
+    Nuclear(std::string sector, double workers, double money, double factories);
     Nuclear(const Nuclear& item);
     ~Nuclear();
     //double StripingReactors();
@@ -17,5 +17,9 @@ public:
     double  shortenSector() override;
     double  income() override;
     double  costSector() override;
+    std::string getSector() override;
+    double getWorkers() override;
+    double getMoney() override;
+    double getFactories() override;
 };
 

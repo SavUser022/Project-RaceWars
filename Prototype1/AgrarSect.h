@@ -14,5 +14,11 @@ public:
     double shortenSector() override;
     double  income() override ;
     double  costSector() override;
+     //int getId() override;
+     std::string getSector() override ;
+     double getMoney() override ;
+     double getFactories() override ;
+     double getWorkers() override;
+     double getfields();
 };
 

@@ -1,12 +1,11 @@
 #include "framework.h"
 #include "Nuclear.h"
 
-Nuclear::Nuclear() : Economy(), mutants(0)
-{
-}
+Nuclear::Nuclear() : Economy()
+{}
 
-Nuclear::Nuclear(std::string sector, double workers, double money, double mutants)  
-	: Economy(sector, workers, money, mutants), mutants(mutants)
+Nuclear::Nuclear(std::string sector, double workers, double money, double factories )  
+	: Economy(sector, workers, money, factories)// mutants(mutants)
 {}
 
 Nuclear::Nuclear(const Nuclear& item)
@@ -15,7 +14,6 @@ Nuclear::Nuclear(const Nuclear& item)
 	this->factories = item.factories;
 	this->money = item.money;
 	this->workers = item.workers;
-	this->mutants = item.mutants;
 }
 
 Nuclear::~Nuclear()
@@ -36,7 +34,6 @@ double Nuclear::fundSector()
 	money - spends;
 	factories = spends * 0.1;
 	return factories;
-	
 }
 
 double Nuclear::shortenSector()
@@ -68,4 +65,25 @@ double Nuclear::costSector()
 		money += costs;
 		std::this_thread::sleep_for(std::chrono::minutes(time));
 	};
+}
+
+std::string Nuclear::getSector()
+{
+	return std::string();
+}
+
+
+double Nuclear::getWorkers()
+{
+	return workers;
+}
+
+double Nuclear::getMoney()
+{
+	return money;
+}
+
+double Nuclear::getFactories()
+{
+	return factories;
 }

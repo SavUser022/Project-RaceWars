@@ -5,8 +5,8 @@ PetroChemical::PetroChemical() : Economy()
 {
 }
 
-PetroChemical::PetroChemical(std::string sector, double workers, double money) 
-	: Economy(sector, workers, money, money)
+PetroChemical::PetroChemical(std::string sector, double workers, double money, double factories) 
+	: Economy(sector, workers, money, factories)
 {
 }
 
@@ -58,4 +58,26 @@ double PetroChemical::costSector()
 		return money;
 	}
 
+}
+
+std::string PetroChemical::getSector()
+{
+	return sector;
+}
+
+
+
+double PetroChemical::getWorkers()
+{
+	return workers;
+}
+
+double PetroChemical::getMoney()
+{
+	return money;
+}
+
+double PetroChemical::getFactories()
+{
+	return factories;
 }

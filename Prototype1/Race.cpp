@@ -3,12 +3,13 @@
 #include "Race.h"
 #include "Economy.h"
 
-Race::Race() : Economy(), name("NONE"), population(1000), status(0), power(0), tax(0.001)
+Race::Race() : Economy(), name("NONE"), population(1000), status(0), power(0), tax(0.001), id(0)
 {
 }
 
-Race::Race(std::string name, double population, int status, int power, double tax) :
-	Economy( sector, workers, money, factories)
+Race::Race(std::string name, double population, int status, int power, double tax, int id) :
+	Economy( sector, workers, money, factories), name(name), population(population),
+	status(status), power(power), tax(tax), id(id)
 {
 }
 
@@ -21,7 +22,6 @@ Race::Race(const Race& item)
 	this->population = item.population;
 	this->power = item.power;
 	this->status = item.status;
-
 }
 
 Race::~Race()
