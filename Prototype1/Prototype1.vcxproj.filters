@@ -42,6 +42,12 @@
     <ClInclude Include="QuasiState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Rebels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Alliance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Prototype1.cpp">
@@ -60,6 +66,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="QuasiState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rebels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Alliance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
